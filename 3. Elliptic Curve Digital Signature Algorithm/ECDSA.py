@@ -58,4 +58,4 @@ try:
     #with the private key. this was generated initially using ECC.generate.
 
 except ValueError:
-    print("It is not an authentic messaage.")
+    print("It is not an authentic message.")
