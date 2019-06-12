@@ -18,7 +18,7 @@ with open("encrypted.bin", "wb") as file_out:
     [file_out.write(x) for x in (cipher.nonce, tag, cipher_text)]
 print("Data is now encrypted")
 
-# now the decryption process starts.
+# now the decryption process starts. The same files are now read. 
 
 with open("aes.key","rb") as file_in:
     key = file_in.read(16) #same size key
