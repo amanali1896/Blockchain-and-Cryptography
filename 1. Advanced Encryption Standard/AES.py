@@ -20,7 +20,7 @@ print("Data is now encrypted")
 
 # now the decryption process starts. The same files are now read. 
 
-with open("aes.key","rb") as file_in:
+with open("aes.key","rb") as file_in: #rb means read in binary
     key = file_in.read(16) #same size key
 with open("encrypted.bin","rb") as file_in:
     nonce, tag, cipher_text = [file_in.read(x) for x in (16, 16, -1)] #nonce, tag and ciphertext
